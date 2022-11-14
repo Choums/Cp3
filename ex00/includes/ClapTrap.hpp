@@ -6,7 +6,7 @@
 /*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:20:44 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/14 17:39:03 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/14 18:36:59 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,12 @@ class ClapTrap {
 		int			getHit() const;
 		int			getEnergy() const;
 		int			getDmg() const;
+		void		show_state(std::ostream& flux) const;
 	private:
-		std::string	_name;
-		int			_hit; /* Points de vie */
-		int			_energy;
-		int			_dmg;
+		std::string		_name;
+		int	_hit; /* Points de vie */
+		int	_energy;
+		int	_dmg;
 };
 
 	/*	Flux Operator overload */
