@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:32:00 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/14 18:46:52 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/17 19:53:01 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,25 @@
 	/*	Constructors/Destructor */
 ClapTrap::ClapTrap() : _name("Fearless Black Knight"), _hit(10), _energy(10), _dmg(0)
 {
-	std::cout << "[ A new challenger has appeared : " << this->_name << " ]" << std::endl;
+	std::cout << "[ A new Clap challenger has appeared : " << this->_name << " ]" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name, int hit, int energy, int dmg) : _name(name), _hit(hit), _energy(energy), _dmg(dmg)
 {
-	std::cout << "[ A new challenger has appeared : " << this->_name << " ]" << std::endl;
+	std::cout << "[ A new Clap challenger has appeared : " << this->_name << " ]" << std::endl;
 }
 
-ClapTrap::ClapTrap(ClapTrap const& obj)
+ClapTrap::ClapTrap(ClapTrap const& cpy)
 {
-	this->_name = obj.getName();
-	this->_hit = obj.getHit();
-	this->_energy = obj.getEnergy();
-	this->_dmg = obj.getDmg();
+	this->_name = cpy.getName();
+	this->_hit = cpy.getHit();
+	this->_energy = cpy.getEnergy();
+	this->_dmg = cpy.getDmg();
 }
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "[ " << this->_name << "'s body disappeared ! ]" << std::endl;
+	std::cout << "[ Clap " << this->_name << "'s body disappeared ! ]" << std::endl;
 }
 
 	/*	Methods */

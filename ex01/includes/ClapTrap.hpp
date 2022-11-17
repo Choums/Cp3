@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:20:44 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/15 18:15:16 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/17 19:44:02 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class ClapTrap {
 			/*	Constructors/Destructor */
 		ClapTrap();
 		ClapTrap(std::string name, int hit=10, int energy=10, int dmg=0);
-		ClapTrap(ClapTrap const& obj); /* Cpy */
+		ClapTrap(ClapTrap const& cpy); /* Cpy */
 		~ClapTrap();
 
 			/*	Methods */
