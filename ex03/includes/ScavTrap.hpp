@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:34:27 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/17 19:58:12 by root             ###   ########.fr       */
+/*   Updated: 2022/11/21 18:46:00 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ class ScavTrap : public ClapTrap
 			/*	Methods */
 		void	attack(const std::string& target);
 		void	guardGate();
-	private:
+	protected:
+		// Inherited constructor for Diamond
+		ScavTrap(int energy);
 };
 
 #endif

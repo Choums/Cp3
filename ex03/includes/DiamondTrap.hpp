@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 17:35:44 by root              #+#    #+#             */
-/*   Updated: 2022/11/19 17:47:16 by root             ###   ########.fr       */
+/*   Updated: 2022/11/21 18:55:06 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class	DiamondTrap : public FragTrap, public ScavTrap
 {
 	public:
-		DiamondTrap();
+		DiamondTrap(std::string &name);
 		DiamondTrap(DiamondTrap const& cpy);
 		~DiamondTrap();
 

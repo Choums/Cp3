@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 20:09:13 by root              #+#    #+#             */
-/*   Updated: 2022/11/17 20:39:36 by root             ###   ########.fr       */
+/*   Updated: 2022/11/21 18:48:21 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,9 @@ class FragTrap : public ClapTrap
 		~FragTrap();
 			/*	Methods */
 		void	highFivesGuys(void);
-	private:
+	protected:
+		// Inherited constructor for Diamond
+		FragTrap(int hit, int dmg);
 };
 
 #endif

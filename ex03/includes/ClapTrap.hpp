@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:20:44 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/17 19:44:02 by root             ###   ########.fr       */
+/*   Updated: 2022/11/21 19:22:28 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ class ClapTrap {
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 		bool	isAlive() const;
+
 			/*	Assignement Operator overload */
 		ClapTrap&	operator=(ClapTrap const& obj);
 
