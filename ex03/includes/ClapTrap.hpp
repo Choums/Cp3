@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:20:44 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/21 19:22:28 by root             ###   ########.fr       */
+/*   Updated: 2022/11/22 16:44:42 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,10 @@ class ClapTrap {
 		int			getHit() const;
 		int			getEnergy() const;
 		int			getDmg() const;
+		void		setName(std::string name);
+		void		setHit(int hit);
+		void		setEnergy(int energy);
+		void		setDmg(int dmg);
 		void		show_state(std::ostream& flux) const;
 	protected:
 		std::string		_name;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:34:29 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/17 20:05:14 by root             ###   ########.fr       */
+/*   Updated: 2022/11/22 17:55:15 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,14 @@ ScavTrap::ScavTrap(ScavTrap const& cpy)
 	this->_dmg = cpy.getDmg();
 }
 
+ScavTrap::SCa
+
 ScavTrap::~ScavTrap()
 {
 	std::cout << "[ Scav " << this->_name << "'s body disappeared ! ]" << std::endl;
 }
+
+
 
 /*	Methods */
 void	ScavTrap::attack(const std::string& target)

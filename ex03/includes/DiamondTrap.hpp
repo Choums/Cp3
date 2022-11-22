@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 17:35:44 by root              #+#    #+#             */
-/*   Updated: 2022/11/21 18:55:06 by root             ###   ########.fr       */
+/*   Updated: 2022/11/22 17:52:40 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class	DiamondTrap : public FragTrap, public ScavTrap
 		DiamondTrap(DiamondTrap const& cpy);
 		~DiamondTrap();
 
+		void	attack(const std::string& taget);
 		void	whoAmI();
 	private:
 		std::string	name;	

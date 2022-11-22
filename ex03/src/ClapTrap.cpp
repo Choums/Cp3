@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:32:00 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/17 19:53:01 by root             ###   ########.fr       */
+/*   Updated: 2022/11/22 16:46:34 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,26 @@ int	ClapTrap::getDmg() const
 {
 	// std::cout << this->_name << " makes " << this->_dmg << " damage" << std::endl;
 	return (this->_dmg);
+}
+
+void	ClapTrap::setName(std::string name)
+{
+	this->_name = name;
+}
+
+void	ClapTrap::setHit(int hit)
+{
+	this->_hit = hit;
+}
+
+void	ClapTrap::setEnergy(int energy)
+{
+	this->_energy = energy;
+}
+
+void	ClapTrap::setDmg(int dmg)
+{
+	this->_dmg = dmg;
 }
 
 void	ClapTrap::show_state(std::ostream& flux) const
