@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:31:27 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/22 16:50:23 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/27 16:39:58 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 int	main(void)
 {
-	std::string	name("salut");
+	std::string name("hola");
 	DiamondTrap	test(name);
 
 	return (0);

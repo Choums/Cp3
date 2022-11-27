@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:34:29 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/22 17:55:15 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/27 16:38:24 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ScavTrap.hpp"
 
-ScavTrap::ScavTrap() : ClapTrap("Knight",100, 50, 20)
+ScavTrap::ScavTrap() : ClapTrap("Knight", 100, 50, 20)
 {
 	std::cout << "[ A new Scav challenger has appeared : " << this->_name << " ! ]" << std::endl;
 }
@@ -28,9 +28,8 @@ ScavTrap::ScavTrap(ScavTrap const& cpy)
 	this->_hit = cpy.getHit();
 	this->_energy = cpy.getEnergy();
 	this->_dmg = cpy.getDmg();
+	std::cout << "[ A new Clap challenger has copied : " << this->_name << " skills and equipments ]" << std::endl;
 }
-
-ScavTrap::SCa
 
 ScavTrap::~ScavTrap()
 {

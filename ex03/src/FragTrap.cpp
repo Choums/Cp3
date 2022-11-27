@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 20:09:05 by root              #+#    #+#             */
-/*   Updated: 2022/11/22 16:48:45 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/27 15:57:35 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,6 @@ FragTrap::FragTrap(FragTrap const& cpy)
 FragTrap::~FragTrap()
 {
 	std::cout << "[ Frag " << this->_name << "'s body disappeared ! ]" << std::endl;
-}
-
-FragTrap::FragTrap(int hit, int dmg)
-{
-	this->setHit(hit);
-	this->setDmg(dmg);
 }
 
 void	FragTrap::highFivesGuys()

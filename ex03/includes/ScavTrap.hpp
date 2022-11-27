@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:34:27 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/21 18:46:00 by root             ###   ########.fr       */
+/*   Updated: 2022/11/27 16:23:56 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap
+class ScavTrap : virtual public ClapTrap
 {
 	public:
 			/*	Constructors/Destructor */
@@ -27,8 +27,6 @@ class ScavTrap : public ClapTrap
 		void	attack(const std::string& target);
 		void	guardGate();
 	protected:
-		// Inherited constructor for Diamond
-		ScavTrap(int energy);
 };
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:32:00 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/22 16:46:34 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/27 16:32:17 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ ClapTrap::ClapTrap(ClapTrap const& cpy)
 	this->_hit = cpy.getHit();
 	this->_energy = cpy.getEnergy();
 	this->_dmg = cpy.getDmg();
+	std::cout << "[ A new Clap challenger has copied : " << this->_name << " skills and equipments ]" << std::endl;
+	
 }
 
 ClapTrap::~ClapTrap()

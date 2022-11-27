@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 20:09:13 by root              #+#    #+#             */
-/*   Updated: 2022/11/21 18:48:21 by root             ###   ########.fr       */
+/*   Updated: 2022/11/27 16:23:53 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 # define FRAGTRAP_HPP
 
 # include "./ClapTrap.hpp"
-# include "./ScavTrap.hpp"
 
-class FragTrap : public ClapTrap
+class FragTrap : virtual public ClapTrap
 {
 	public:
 		FragTrap();
@@ -26,8 +25,6 @@ class FragTrap : public ClapTrap
 			/*	Methods */
 		void	highFivesGuys(void);
 	protected:
-		// Inherited constructor for Diamond
-		FragTrap(int hit, int dmg);
 };
 
 #endif
