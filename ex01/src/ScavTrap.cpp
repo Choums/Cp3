@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:34:29 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/17 20:05:14 by root             ###   ########.fr       */
+/*   Updated: 2022/11/28 12:47:40 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ ScavTrap::ScavTrap(ScavTrap const& cpy)
 	this->_hit = cpy.getHit();
 	this->_energy = cpy.getEnergy();
 	this->_dmg = cpy.getDmg();
+	std::cout << "[ A new Scav challenger has copied : " << this->_name << " skills and equipments ]" << std::endl;
 }
 
 ScavTrap::~ScavTrap()

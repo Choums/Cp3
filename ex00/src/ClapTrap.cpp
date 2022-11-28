@@ -6,7 +6,7 @@
 /*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:32:00 by chaidel           #+#    #+#             */
-/*   Updated: 2022/11/14 18:46:52 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/28 12:46:39 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ ClapTrap::ClapTrap(ClapTrap const& obj)
 	this->_hit = obj.getHit();
 	this->_energy = obj.getEnergy();
 	this->_dmg = obj.getDmg();
+	std::cout << "[ A new Clap challenger has copied : " << this->_name << " skills and equipments ]" << std::endl;
 }
 
 ClapTrap::~ClapTrap()

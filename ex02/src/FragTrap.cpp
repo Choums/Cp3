@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 20:09:05 by root              #+#    #+#             */
-/*   Updated: 2022/11/17 20:40:32 by root             ###   ########.fr       */
+/*   Updated: 2022/11/28 12:47:14 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ FragTrap::FragTrap(FragTrap const& cpy)
 	this->_hit = cpy.getHit();
 	this->_energy = cpy.getEnergy();
 	this->_dmg = cpy.getDmg();
+	std::cout << "[ A new Frag challenger has copied : " << this->_name << " skills and equipments ]" << std::endl;
 }
 
 FragTrap::~FragTrap()

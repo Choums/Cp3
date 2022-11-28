@@ -1,4 +1,4 @@
-NAME    = Clap
+NAME    = Diamond
 OS		= $(shell uname)
 
 # directories

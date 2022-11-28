@@ -6,7 +6,7 @@
 /*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 17:35:44 by root              #+#    #+#             */
-/*   Updated: 2022/11/22 17:52:40 by chaidel          ###   ########.fr       */
+/*   Updated: 2022/11/28 12:05:33 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 class	DiamondTrap : public FragTrap, public ScavTrap
 {
 	public:
+		DiamondTrap();
 		DiamondTrap(std::string &name);
 		DiamondTrap(DiamondTrap const& cpy);
 		~DiamondTrap();

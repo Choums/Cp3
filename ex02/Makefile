@@ -1,4 +1,4 @@
-NAME    = Clap
+NAME    = Frag
 OS		= $(shell uname)
 
 # directories

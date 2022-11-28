@@ -1,4 +1,4 @@
-NAME    = Clap
+NAME    = Scav
 OS		= $(shell uname)
 
 # directories

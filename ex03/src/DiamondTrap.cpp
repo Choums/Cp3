@@ -3,35 +3,45 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 17:35:42 by root              #+#    #+#             */
-/*   Updated: 2022/11/27 16:33:09 by root             ###   ########.fr       */
+/*   Updated: 2022/11/28 12:54:51 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap(std::string &name)
+DiamondTrap::DiamondTrap() : ClapTrap("Carbon_clap_name"), FragTrap(), ScavTrap()
 {
-	ClapTrap::_name = name + "_clap_name";
+	this->name = "Carbon";
+	FragTrap::_hit = 100;
+	ScavTrap::_energy = 50;
+	FragTrap::_dmg = 30;
+	std::cout << "[ A new Diamond challenger has appeared : " << this->name << " ]" << std::endl;
+}
+
+DiamondTrap::DiamondTrap(std::string &name) : ClapTrap(name + "_clap_name"), FragTrap(), ScavTrap()
+{
 	this->name = name;
-	this->_hit = FragTrap::_hit;
-	this->_energy = ScavTrap::_energy;
-	this->_dmg = FragTrap::_dmg;
-	std::cout << this->FragTrap::_hit << std::endl;
+	FragTrap::_hit = 100;
+	ScavTrap::_energy = 50;
+	FragTrap::_dmg = 30;
 	std::cout << "[ A new Diamond challenger has appeared : " << this->name << " ]" << std::endl;
 }
 
 DiamondTrap::DiamondTrap(DiamondTrap const& cpy)
 {
-	*this = cpy;
-	std::cout << "[ A new Clap challenger has copied : " << this->_name << " skills and equipments ]" << std::endl;
+	this->_name = cpy.getName();
+	this->_hit = cpy.getHit();
+	this->_energy = cpy.getEnergy();
+	this->_dmg = cpy.getDmg();
+	std::cout << "[ A new Diamond challenger has copied : " << this->_name << " skills and equipments ]" << std::endl;
 }
 
 DiamondTrap::~DiamondTrap()
 {
-	std::cout << "[ Scav " << this->name << "'s body disappeared ! ]" << std::endl;
+	std::cout << "[ Diamond " << this->name << "'s body disappeared ! ]" << std::endl;
 }
 
 void	DiamondTrap::attack(const std::string& target)
@@ -41,5 +51,6 @@ void	DiamondTrap::attack(const std::string& target)
 
 void	DiamondTrap::whoAmI()
 {
-	
+	std::cout << "<Diamond> Object name is " << this->name << " !" << std::endl;
+	std::cout << "<Diamond> Sub-Object clap name is " << this->_name << " !" << std::endl;
 }
